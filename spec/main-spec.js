@@ -31,4 +31,16 @@ describe('taxi fee', function () {
         var expect_value = 12;
         expect(expect_value).toEqual(result)
     })
+    it("taxi driving 10 km and waiting 0 min ", function(){
+        var input = {distance: 10, wait: 0}
+        var result = main(input);
+        var expect_value = 13;
+        expect(expect_value).toEqual(result)
+    })
+    it("taxi driving 10 km and waiting 5 min ", function(){
+        var input = {distance: 10, wait: 5}
+        var result = main(input);
+        var expect_value = 14;
+        expect(expect_value).toEqual(result)
+    })
 });
